@@ -1,0 +1,76 @@
+// Zmienne kolorów
+$color1: black;
+$color2: orange;
+
+// Stylowanie ciała strony
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $color1; // Czarny jako tło
+  color: $color2;           // Pomarańczowy jako główny kolor tekstu
+}
+
+// Nagłówek
+header {
+  background-color: $color2; // Pomarańczowe tło
+  color: $color1;            // Czarny tekst
+  padding: 15px;
+  text-align: center;
+
+  .header__menu h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+
+
+// Główna sekcja
+main {
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    color: $color2; // Nagłówek w pomarańczowym
+  }
+
+  textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 120px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid $color2; // Pomarańczowa ramka
+    border-radius: 5px;
+    background-color: $color1; // Czarny jako tło
+    color: $color2;           // Pomarańczowy tekst
+
+    &:focus {
+      outline: none;
+      border-color: $color2;
+      background-color: darken($color1, 5%);
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $color2;
+    margin-top: 10px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+// Stopka
+footer {
+  background-color: $color2; // Pomarańczowy jako tło
+  color: $color1;            // Czarny tekst
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}

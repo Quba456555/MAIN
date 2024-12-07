@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./Style/style_index.css" />
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu" id="menu">
+        <div></div>
+        <h1>M</h1>
+        <div></div>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">
+            Close
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>Blog</h1>
+      <p>Share your opinion!</p>
+      <textarea
+        id="comment-box"
+        rows="5"
+        maxlength="200"
+        placeholder="Enter your comment..."
+      ></textarea>
+      <p>Characters remaining: <span id="char-count">200</span></p>
+    </main>
+
+    <script src="./Scritps/x.js" defer></script>
+  </body>
+</html>
