@@ -46,11 +46,7 @@ main {
     background-color: $color1; 
     color: $color2;           
 
-    &:focus {
-      outline: none;
-      border-color: $color2;
-      background-color: darken($color1, 5%);
-    }
+   
   }
 
   p {
@@ -58,9 +54,7 @@ main {
     color: $color2;
     margin-top: 10px;
 
-    span {
-      font-weight: bold;
-    }
+    
   }
 }
 
